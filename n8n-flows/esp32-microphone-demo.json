@@ -1,0 +1,39 @@
+{
+  "name": "ESP32 Microphone Trigger",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "mic-trigger",
+        "options": {}
+      },
+      "id": "1",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "message": "=Odebrano dane z ESP32 mikrofonu:\n{{$json["device"]}}\n{{$json["trigger"]}}\n{{$json["timestamp"]}}"
+      },
+      "id": "2",
+      "name": "Debug Message",
+      "type": "n8n-nodes-base.debug",
+      "typeVersion": 1,
+      "position": [450, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Debug Message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

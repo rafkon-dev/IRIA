@@ -1,0 +1,1 @@
+Ten przepływ służy do testowania komunikacji z urządzeniem mikrofonowym ESP32, które wysyła JSON z informacją o wykryciu głosu.
