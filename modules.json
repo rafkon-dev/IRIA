@@ -1,0 +1,32 @@
+{
+  "modules": [
+    {
+      "id": "face-detect",
+      "name": "Rozpoznawanie twarzy",
+      "type": "vision",
+      "description": "Lokalne wykrywanie i identyfikacja twarzy domowników",
+      "status": "ready"
+    },
+    {
+      "id": "voice-ctrl",
+      "name": "Głosowe sterowanie",
+      "type": "audio",
+      "description": "Rozpoznawanie i wykonywanie lokalnych komend głosowych",
+      "status": "in_progress"
+    },
+    {
+      "id": "presence-logger",
+      "name": "Obecność domowników",
+      "type": "logic",
+      "description": "Logika obecności na podstawie kamer i mikrofonów",
+      "status": "ready"
+    },
+    {
+      "id": "n8n-bridge",
+      "name": "Most do n8n",
+      "type": "integration",
+      "description": "Łączenie lokalnych danych z systemem automatyzacji n8n",
+      "status": "planned"
+    }
+  ]
+}
