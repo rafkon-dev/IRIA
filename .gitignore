@@ -5,3 +5,8 @@ __pycache__/
 .env
 node_modules/
 *.log
+/.pio
+/.vscode
+*.zip
+*.bak
+.DS_Store
